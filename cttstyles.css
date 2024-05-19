@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #340057;
+    margin: 0;
+    padding: 0;
+}
+body {
+        background-image: url('images/golden.jpg'); /* Substitua pelo caminho da sua imagem */
+        background-size: 52%; /* Ajuste o valor conforme necessário */
+        background-position: bottom;
+        background-attachment: fixed;
+        background-repeat: no-repeat; /* Adiciona esta linha para evitar repetição */    
+}
+
+#header {
+    background-color: #5e007a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#profile-image {
+    max-width: 180px;
+    border-radius: 30%;
+    display: block;
+    margin: 20px auto;
+    float: left;
+}
+
+#main-content {
+    padding: 50px;
+    background-color: rgb(145, 0, 212);
+    border: 1px solid black;
+    border-radius: 10px;
+    float: right;
+    max-width: 70%; /* Ajuste conforme necessário */
+}
+
+.content-box {
+    background-color: rgb(164, 74, 216);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #5e007a;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content .social-media a img {
+    width: 40px;
+    margin: 0 10px;
+}

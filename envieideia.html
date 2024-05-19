@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie sua Ideia</title>
+    <link rel="stylesheet" href="eistyles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <h1><b>My Pet's House</b></h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="envieideia.html">Envie sua ideia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form action="/action_page.php">
+        <label for="fname">Nome Completo:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Telefone para Contato:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="images/cachorro.png" alt="Modelo 1">
+            <div class="caption">Cachorro</div>
+        </div>
+        <div class="slide">
+            <img src="images/gato.png" alt="Modelo 2">
+            <div class="caption">Gato</div>
+        </div>
+        <div class="slide">
+            <img src="images/passaro.png" alt="Modelo 3">
+            <div class="caption">Pássaro</div>
+        </div>
+        <div class="slide">
+            <img src="images/coelho.png" alt="Modelo 4">
+            <div class="caption">Coelho</div>
+        </div>
+        <!-- Botões de navegação -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+
+    <div class="thumbnail-container">
+        <img class="thumbnail" src="images/cachorro.png" onclick="currentSlide(1)" alt="Modelo 1">
+        <img class="thumbnail" src="images/gato.png" onclick="currentSlide(2)" alt="Modelo 2">
+        <img class="thumbnail" src="images/passaro.png" onclick="currentSlide(3)" alt="Modelo 3">
+        <img class="thumbnail" src="images/coelho.png" onclick="currentSlide(4)" alt="Modelo 4">
+    </div>
+
+    <script src="eiscripts.js"></script>
+</body>
+</html>
