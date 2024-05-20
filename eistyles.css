@@ -2,9 +2,6 @@
     body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     background-color: #8427c2;
-    background-image: url('paws.jpg');
-    background-repeat: repeat; /* A imagem será replicada */
-    background-size: auto; /* Tamanho original da imagem */
     margin: 0;
     padding: 0;
 }
