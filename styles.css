@@ -46,8 +46,8 @@ body {
 #main-content {
     padding: 20px;
     text-align: left;
-    margin-right: 220px;
-    color: rgb(83, 1, 90)
+    margin-right: 220px; /* Adiciona espaço para o slideshow */
+    color: rgb(0, 134, 223)
 }
 
 /* Link de Contato */
