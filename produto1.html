@@ -1,91 +1,134 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Pet's House</title>
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header id="header">
-        <h1><b>My Pet's House</b></h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="envieideia.html">Envie sua ideia</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formas de Pagamento - My Pet's House</title>
-    <link rel="stylesheet" href="eistyles.css">
-</head>
-<body>
-    <style>
-        body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-          margin: 0;
-        }
-        .container {
-          text-align: center;
-        }
-      </style>
-      </head>
-      <body>
-        <div class="container">
-          <img src="scoobydoohouse.png" alt="Casinha Garden" width="300" height="200">
-          <h3>Casinha Scooby Doo!</h3>
-          <p>R$ 750,00</p>
-        </div>
-    <!-- Conteúdo Principal -->
-    <main id="main-content">
-        <h2>Formas de Pagamento</h2>
-        <section class="payment-options">
-            <h3>Parcelamento e Pagamento à Vista</h3>
-            <p>Oferecemos diversas opções de pagamento para facilitar sua compra:</p>
-            <ul>
-                <li>Parcelamento em até 12x no cartão de crédito</li>
-                <li>Desconto de 10% para pagamento à vista no boleto</li>
-                <li>Pagamento via Pix com confirmação instantânea</li>
-            </ul>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
 
-            <h3>Bandeiras Aceitas</h3>
-            <p>Trabalhamos com as principais bandeiras de cartão de crédito e débito:</p>
-            <div class="card-brands">
-                <img src="visa.png" alt="Visa" width="60" height="60">
-                <img src="mastercard.png" alt="MasterCard" width="60" height="60">
-                <img src="american-express.png" alt="American Express" width="60" height="60">
-                <img src="elo.png" alt="Elo" width="60" height="60">
-                <!-- Adicione mais logos conforme necessário -->
-            </div>
+#header {
+    background-color: #8f0083;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    text-align: center;
+}
 
-            <h3>Outras Formas de Pagamento</h3>
-            <div class="payment-methods">
-                <div class="method">
-                    <img src="credito.png" alt="Cartão de Crédito" width="60" height="60">
-                    <p>Cartão de Débito</p>
-                </div>
-                <div class="method">
-                    <img src="pix.png" alt="Pix" width="60" height="60">
-                    <p>Pix</p>
-                </div>
-                <div class="method">
-                    <img src="boleto-simbolo.png" alt="Boleto" width="60" height="60">
-                    <p>Boleto Bancário</p>
-                </div>
-            </div>
-        </section>
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #610064;
+    text-align: center;
+}
 
-        <section class="back-to-products">
-            <a href="index.html" class="button">Voltar para a Galeria de Produtos</a>
-        </section>
-    </main>
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #111;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.caption {
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.thumbnail-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    cursor: pointer;
+    height: 80px;
+    width: auto;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
 
     <!-- Barra de Rodapé -->
     <footer id="footer">
