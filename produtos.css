@@ -46,6 +46,9 @@ body {
     margin-right: 220px; /* Adiciona espaço para o slideshow */
     color: rgb(0, 134, 223)
 }
+.main-content .back-to-products {
+    color: white; /* ou qualquer cor que você desejar */
+}
 
 /* Link de Contato */
 #contact-link {
