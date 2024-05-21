@@ -1,0 +1,156 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    background-color: #8427c2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: rgb(137, 0, 150);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header h1 {
+    margin: 0;
+}
+
+/* Menu */
+#menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    color: #ccc;
+}
+
+/* Conteúdo Principal */
+#main-content {
+    padding: 20px;
+    text-align: left;
+    margin-right: 220px; /* Adiciona espaço para o slideshow */
+    color: rgb(0, 134, 223)
+}
+
+/* Link de Contato */
+#contact-link {
+    display: block;
+    margin-top: 20px;
+}
+
+/* Imagem de Perfil */
+#profile-image {
+    max-width: 60px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Contêiner do Slideshow */
+#slideshow-wrapper {
+    position: fixed;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    width: 220px; /* Define a largura do contêiner */
+    height: 220px; /* Define a altura do contêiner */
+    background-color: #000; /* Cor de fundo do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Para ficar acima do conteúdo */
+}
+
+/* Estilos CSS para o slideshow */
+#slideshow-container {
+    width: 200px;
+    height: 200px;
+    background-color: #000; /* Cor de fundo */
+    overflow: hidden;
+}
+
+.slideshow-image {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Mostrar a primeira imagem */
+.slideshow-image:first-child {
+    display: block;
+}
+
+/* Estilos para a galeria de produtos */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 produtos por linha */
+    gap: 20px; /* Espaçamento entre os produtos */
+    padding: 20px;
+    margin-bottom: 60px; /* Margem na parte inferior para a barra de rodapé */
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.product {
+    background-color: #440141;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.product img {
+    width: 100%;
+    height: 100px;
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.product h3,
+.product p {
+    margin: 10px 0;
+}
+
+/* Barra de Rodapé */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 2; /* Para ficar acima do conteúdo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
