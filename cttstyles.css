@@ -1,22 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #340057;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    background-color: #8427c2;
     margin: 0;
     padding: 0;
-    background-image: url('golden.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: 52%; /* Ajuste o valor conforme necessário */
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat; /* Adiciona esta linha para evitar repetição */    
 }
 
+/* Cabeçalho */
 #header {
-    background-color: #5e007a;
-    color: #ffffff;
+    background-color: rgb(137, 0, 150);
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+#header h1 {
+    margin: 0;
+}
+
+/* Menu */
 #menu {
     list-style-type: none;
     padding: 0;
@@ -25,13 +27,16 @@ body {
 
 #menu li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 10px;
 }
 
 #menu li a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+}
+
+#menu li a:hover {
+    color: #ccc;
 }
 
 #profile-image {
