@@ -1,15 +1,13 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #8427c2;
     margin: 0;
     padding: 0;
-}
-body {
-        background-image: url('golden.jpg'); /* Substitua pelo caminho da sua imagem */
-        background-size: 52%; /* Ajuste o valor conforme necessário */
-        background-position: bottom;
-        background-attachment: fixed;
-        background-repeat: no-repeat; /* Adiciona esta linha para evitar repetição */    
+    background-image: url('golden.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: 52%; /* Ajuste o valor conforme necessário */
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Adiciona esta linha para evitar repetição */
 }
 /* Cabeçalho */
 #header {
