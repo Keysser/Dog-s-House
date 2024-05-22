@@ -1,38 +1,42 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-}
-
-#header {
-    background-color: #8f0083;
-    color: rgb(255, 255, 255);
-    padding: 15px 0;
-    text-align: center;
-}
-
-#menu {
-    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    background-color: #8427c2;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #610064;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: rgb(137, 0, 150);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header h1 {
+    margin: 0;
+}
+
+/* Menu */
+#menu {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
 }
 
 #menu li {
     display: inline;
+    margin-right: 10px;
 }
 
 #menu li a {
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
+    color: #fff;
     text-decoration: none;
 }
 
 #menu li a:hover {
-    background-color: #111;
+    color: #ccc;
 }
 
 .slideshow-container {
