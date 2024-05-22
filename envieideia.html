@@ -20,11 +20,13 @@
         </nav>
     </header>
     
-    <form action="/action_page.php">
+    <form action="/action_page.php" method="post" enctype="multipart/form-data">
         <label for="fname">Nome Completo:</label><br>
         <input type="text" id="fname" name="fname" value=""><br>
         <label for="lname">Telefone para Contato:</label><br>
         <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="photo">Foto:</label><br>
+        <input type="file" id="photo" name="photo"><br><br>
         <input type="submit" value="Submit">
     </form>
 
