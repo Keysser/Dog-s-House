@@ -157,3 +157,14 @@ body {
 .contact-info p {
     margin: 5px 0;
 }
+    .button-comprar {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: green;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
